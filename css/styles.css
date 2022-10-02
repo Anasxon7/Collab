@@ -16,8 +16,42 @@
     } */
 }
 .flex {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.w-full {
+    width: 100%;
+}
+a,li {
+    text-decoration: none;
+    list-style-type: none;
+}
+.relative {
+    position: relative;
+}
 /* Base */
+
+/* Header */
+nav {
+    padding: 10px 0;
+}
+
+.logo h1 {
+    color: #080829;
+    font-size: 2rem;
+}
+.logo h1 span {
+    font-size: 2rem;
+    color: #3F53D8;
+    font-weight: bold;
+}
+.logo .domain span{
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
