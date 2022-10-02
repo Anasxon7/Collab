@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
-
+/* Base */
 .container {
     width: 70%;
     margin: 0 auto;
@@ -21,3 +21,9 @@
         width: 90%;
     }
 }
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Base */
