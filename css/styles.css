@@ -2,71 +2,202 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 /* Variable */
+
 :root {
-    color: #222222;
+    --headerHeight: 80px;
+    --bgColor: #424242;
+    --color: #222222;
+    --hover: #787878;
 }
 
 /* Base */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+body {
+    margin-top: var(--headerHeight);
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
-    /* @media screen and (max-width: 768px) {
-        width: 100%;
-    } */
 }
-.flex {
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Base */
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    background: var(--bgColor);
+    border-bottom: 1px solid var(--color);
+    z-index: 99;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--headerHeight);
+    padding: 0 20px;
+}
+
+.header .navbar .navbar-list {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
-.w-full {
-    width: 100%;
-}
-a,li {
-    text-decoration: none;
+
+.header .navbar .navbar-list .navbar-item {
+    padding: 7px 15px;
     list-style-type: none;
 }
-.relative {
-    position: relative;
-}
-/* Base */
 
-/* Header */
-nav {
-    padding: 10px 0;
+.header .navbar .navbar-list .navbar-item a {
+    color: var(--color);
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 16px;
 }
 
-.logo h1 {
-    color: #080829;
-    font-size: 2rem;
-}
-.logo h1 span {
-    font-size: 2rem;
-    color: #3F53D8;
-    font-weight: bold;
-}
-.logo .domain span{
-    position: absolute;
-    right: 12px;
-    top: 10px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
+.header .navbar .navbar-list .navbar-item a:hover {
+    color: var(--hover);
 }
 
-.navList {
-    gap: 15px;
+.header .navbar .btn {
+    background: transparent;
+    color: var(--color);
+    padding: 9px 20px;
+    font-size: 16px;
+    border-radius: 14px;
+    border: 1px solid var(--color);
+    transition: 1s ease;
 }
-.navLink {
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 18px;
-    color: #222222;
+
+.header .navbar .menu {
+    display: none;
+}
+
+
+@media (min-width: 1440px) {
+    .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .navbar .navbar-item {
+        display: none;
+    }
+
+    .header .navbar .navbar-list.active {
+        position: fixed;
+        top: var(--headerHeight);
+        left: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        background: var(--bgColor);
+        padding-top: 100px;
+    }
+
+    .header .navbar .navbar-list.active .navbar-item {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+        font-size: 30px;
+    }
+
+    .header .navbar .navbar-list.active .navbar-item a {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .header .navbar .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        margin: 8px;
+        background-color: var(--bgColor);
+        border: 1px solid #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .header .navbar .menu div {
+        width: 26px;
+        height: 26px;
+        margin: 8px;
+        position: relative;
+    }
+
+    .header .navbar .menu div span {
+        width: 100%;
+        height: 3px;
+        border-radius: 5px;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.5s, width 0.5s;
+    }
+
+    .header .navbar .menu div .line-1 {
+        transform: translate(-50%, -12px);
+    }
+
+    .header .navbar .menu div .line-3 {
+        transform: translate(-50%, 9px);
+    }
+
+    .header .navbar .menu.openmenu .line-1 {
+        transform: translate(-50%, 0px) rotate(-45deg) !important;
+    }
+
+    .header .navbar .menu.openmenu .line-2 {
+        width: 0;
+    }
+
+    .header .navbar .menu.openmenu .line-3 {
+        transform: translate(-50%, 0) rotate(45deg) !important;
+    }
+}
+
+@media (max-width: 442px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
