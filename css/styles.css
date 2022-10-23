@@ -93,6 +93,13 @@ a {
     display: none;
 }
 
+.navBtn {
+    color: #222222;
+    border: 1px solid rgba(8, 8, 41, 0.2);
+    border-radius: 14px;
+    padding: 17px 34px;
+}
+
 /* Responsive */
 
 @media (min-width: 1440px) {
