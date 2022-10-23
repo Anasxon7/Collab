@@ -5,7 +5,7 @@
 
 :root {
     --headerHeight: 80px;
-    --bgColor: #424242;
+    --bgColor: #fff;
     --color: #222222;
     --hover: #787878;
 }
@@ -21,6 +21,7 @@
 
 body {
     margin-top: var(--headerHeight);
+    background-color: #787878;
 }
 
 .container {
@@ -92,6 +93,8 @@ a {
     display: none;
 }
 
+
+/* Responsive */
 
 @media (min-width: 1440px) {
     .container {
