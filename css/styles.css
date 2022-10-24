@@ -65,7 +65,7 @@ a {
 }
 
 .header .navbar .navbar-list .navbar-item {
-    padding: 7px 15px;
+    padding: 0px 10px;
     list-style-type: none;
 }
 
@@ -104,6 +104,7 @@ a {
     font-weight: 400;
     font-size: 17px;
     line-height: 18px;
+    color: var(--black);
 }
 .nav_cart span {
     opacity: .7;
