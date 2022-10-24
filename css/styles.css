@@ -94,7 +94,10 @@ a {
 }
 
 .navbar-btns  {
-    
+    width: 300px;
+}
+.nav_cart {
+    display: block;
 }
 .navBtn {
     color: #222222;
