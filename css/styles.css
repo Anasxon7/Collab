@@ -95,9 +95,12 @@ a {
 
 .navbar-btns  {
     width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav_cart {
-    display: block;
+    display: f;
 }
 .navBtn {
     color: #222222;
