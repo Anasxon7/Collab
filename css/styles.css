@@ -100,13 +100,20 @@ a {
     align-items: center;
 }
 .nav_cart {
-    display: f;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+}
+.nav_cart span {
+    opacity: .5;
+    padding-left: 10px;
+    font-size: 14px;
 }
 .navBtn {
     color: #222222;
     border: 1px solid rgba(8, 8, 41, 0.2);
     border-radius: 14px;
-    padding: 17px 34px;
+    padding: 12px 26px;
 }
 
 /* Responsive */
