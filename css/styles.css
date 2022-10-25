@@ -22,7 +22,6 @@
 
 body {
     margin-top: var(--headerHeight);
-    background-color: #787878;
 }
 
 .container {
@@ -45,7 +44,6 @@ a {
     left: 0;
     width: 100%;
     background: var(--bgColor);
-    border-bottom: 1px solid var(--color);
     z-index: 99;
 }
 
