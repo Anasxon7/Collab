@@ -38,7 +38,7 @@ a {
 /* Base */
 
 
-
+/* Header */
 .header {
     position: fixed;
     top: 0;
@@ -116,6 +116,15 @@ a {
     border: 1px solid rgba(8, 8, 41, 0.2);
     border-radius: 14px;
     padding: 12px 26px;
+}
+
+/* Header */
+
+/* Banner */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Responsive */
