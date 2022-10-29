@@ -180,6 +180,12 @@ a {
 }
 .logos_title {
     padding-bottom: 50px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: 0.48px;
+    color: #080829;
 }
 .logo_list {
     display: flex;
@@ -187,6 +193,13 @@ a {
     justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
+}
+.logo_item {
+    opacity: .8;
+    user-select: none;
+}
+.logo_item:hover {
+    opacity: 1;
 }
 
 /* Logos */
