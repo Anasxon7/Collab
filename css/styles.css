@@ -45,6 +45,7 @@ a {
     width: 100%;
     background: var(--bgColor);
     z-index: 99;
+    border-bottom: 1px solid #000;
 }
 
 .header .navbar {
@@ -52,7 +53,6 @@ a {
     align-items: center;
     justify-content: space-between;
     height: var(--headerHeight);
-    padding: 0 20px;
 }
 
 .header .navbar .navbar-list {
@@ -123,6 +123,32 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    padding-top: 10px;
+}
+.banner_titles  {
+    width: 50%;
+}
+.banner_titles .title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 63px;
+    line-height: 79px;
+    letter-spacing: 2.16px;
+    color: #080829;
+}   
+
+.banner_titles .desc {
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    /* or 160% */
+
+    letter-spacing: 0.36px;
+
+    color: #080829;
 }
 
 /* Responsive */
