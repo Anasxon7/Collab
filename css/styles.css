@@ -29,6 +29,10 @@ body {
     margin: 0 auto;
 }
 
+section {
+    padding: 100px 0;
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -167,6 +171,25 @@ a {
     margin-left: 40px;
 }
 
+/* Logos */
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logos_title {
+    padding-bottom: 50px;
+}
+.logo_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Logos */
 
 
 
