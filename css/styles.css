@@ -250,7 +250,6 @@ a {
     justify-content: center;
     padding: 100px 0px;
     flex-wrap: wrap;
-    flex-basis: 1 50%;
     gap: 30px;
 }
 .features__card {
@@ -258,6 +257,7 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 50px;
     padding: 20px;
     background: rgba(63, 83, 216, 0.3);
     border-radius: 20px;
