@@ -257,21 +257,27 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 50px;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    color: #000;
+}
+.feat_img {
     padding: 20px;
     background: rgba(63, 83, 216, 0.3);
     border-radius: 20px;
+    margin-bottom: 30px;
 }
-.features__second {
+.img__second {
     background: rgba(254, 127, 81, 0.3);
     border-radius: 20px;
 }
-
-
-.features__card img {
-    padding-bottom: 15px;
-    z-index: 9;
+.features__card p {
+    font-size: 24px;
+    text-align: center;
+    color: #080829;
 }
+
 
 /* Features */
 
