@@ -25,7 +25,7 @@
 } */
 
 .container {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -74,6 +74,8 @@ a {
     align-items: center;
     justify-content: space-between;
     height: var(--headerHeight);
+    width: 90%;
+    margin: 0 auto;
 }
 
 .header .navbar .navbar-list {
