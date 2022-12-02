@@ -288,10 +288,11 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap-reverse;
     width: 100%;
 }
-.collaborate_img {
-    width: 40%;
+.collaborate_img  img{
+    width: 80%;
 }
 .collaborate_info {
     width: 40%;
