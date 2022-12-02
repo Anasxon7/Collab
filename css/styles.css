@@ -30,7 +30,7 @@
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 .section__title {
     font-weight: 400;
@@ -182,7 +182,7 @@ a {
     justify-content: flex-start;
     margin-top: 40px;
 }
-.btn-second {
+.btn_second {
     display: flex;
     width: 240px;
     align-items: center;
@@ -195,7 +195,7 @@ a {
     padding: 16px 36px;
     transition: 1s ease;
 }
-.btn-second:hover {
+.btn_second:hover {
     background: transparent;
     color: var(--color);
     border: 1px solid var(--color);
@@ -250,7 +250,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 0px;
+    padding-top: 80px;
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -283,8 +283,20 @@ a {
 
 /* Features */
 
-
-
+/* Collaborate */
+.collaborate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.collaborate_img {
+    width: 40%;
+}
+.collaborate_info {
+    width: 40%;
+}
+/* Collaborate */
 
 
 
