@@ -156,6 +156,7 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     flex: 1 1 100%;
+    padding-top: 50px;
 }
 .banner_content  {
     margin-top: 20px;
